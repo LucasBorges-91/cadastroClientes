@@ -1,9 +1,19 @@
 package br.com.customerrelationship.model.entities;
 
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Date;
 
+@Entity
 public class Client {
 
+
+  @Id
+  @GeneratedValue( strategy = GenerationType.SEQUENCE )
+  private Integer id;
   private String nome;
   private Date dataNascimento;
   private String email;
@@ -18,6 +28,14 @@ public class Client {
     this.nome = nome;
     this.dataNascimento = dataNascimento;
     this.email = email;
+  }
+
+  public Integer getId() {
+    return id;
+  }
+
+  public void setId(Integer id) {
+    this.id = id;
   }
 
   public String getNome() {
