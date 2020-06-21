@@ -1,6 +1,6 @@
-package br.com.customerrelationship.model.Repositories;
+package br.com.customerrelationship.Repositories;
 
-import br.com.customerrelationship.model.entities.Client;
+import br.com.customerrelationship.entities.Client;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
