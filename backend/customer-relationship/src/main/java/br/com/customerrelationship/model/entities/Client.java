@@ -1,25 +1,41 @@
 package br.com.customerrelationship.model.entities;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+@Table( name = "CLIENTS")
 public class Client {
 
 
   @Id
-  @GeneratedValue( strategy = GenerationType.SEQUENCE )
+  @GeneratedValue( strategy = GenerationType.IDENTITY )
+  @Column( nullable = false )
   private Integer id;
+
+  @Column( nullable = false )
   private String nome;
+
+  @Column( nullable = false )
+  @JsonFormat( shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy" )
   private Date dataNascimento;
+
+  @Column( nullable = false )
   private String email;
+
+  @Column
   private String telefone;
+
+  @Column
   private String endereco;
+
+  @Column
   private Integer numero;
+
+  @Column
   private String complemento;
 
   public Client() {}
