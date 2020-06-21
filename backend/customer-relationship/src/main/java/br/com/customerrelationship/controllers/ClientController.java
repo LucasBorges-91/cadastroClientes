@@ -1,7 +1,7 @@
-package br.com.customerrelationship.model.controllers;
+package br.com.customerrelationship.controllers;
 
-import br.com.customerrelationship.model.Servicies.ClientService;
-import br.com.customerrelationship.model.entities.Client;
+import br.com.customerrelationship.Servicies.ClientService;
+import br.com.customerrelationship.entities.Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

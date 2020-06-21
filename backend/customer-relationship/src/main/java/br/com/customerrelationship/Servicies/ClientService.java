@@ -1,7 +1,7 @@
-package br.com.customerrelationship.model.Servicies;
+package br.com.customerrelationship.Servicies;
 
-import br.com.customerrelationship.model.Repositories.ClientRepository;
-import br.com.customerrelationship.model.entities.Client;
+import br.com.customerrelationship.Repositories.ClientRepository;
+import br.com.customerrelationship.entities.Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

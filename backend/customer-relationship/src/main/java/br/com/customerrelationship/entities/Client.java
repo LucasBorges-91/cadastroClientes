@@ -1,4 +1,4 @@
-package br.com.customerrelationship.model.entities;
+package br.com.customerrelationship.entities;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
