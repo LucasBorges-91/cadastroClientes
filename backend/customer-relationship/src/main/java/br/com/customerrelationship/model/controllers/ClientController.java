@@ -27,7 +27,7 @@ public class ClientController {
     return service.salvar( client );
   }
 
-  @PutMapping( value = "/editclient")
+  @PutMapping( value = "/editclient/{id}")
   @ResponseBody
   public Client editClient( @PathVariable Integer id, @RequestBody Client client ) {
     return service.editar( client, id );
