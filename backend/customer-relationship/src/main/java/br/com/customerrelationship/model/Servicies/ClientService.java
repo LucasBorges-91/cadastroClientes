@@ -35,7 +35,7 @@ public class ClientService {
     return client.get();
   }
 
-  public List<Client> FindByNome( String nome ) {
+  public List<Client> findByNome( String nome ) {
     return repository.findByNome( nome );
   }
 
@@ -43,9 +43,8 @@ public class ClientService {
     return repository.findByEmail( email );
   }
 
-  public boolean delete( Integer id ) {
+  public void delete( Integer id ) {
     repository.deleteById( id );
-    return true;
   }
 
 }
