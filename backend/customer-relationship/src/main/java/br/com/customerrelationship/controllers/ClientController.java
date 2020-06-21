@@ -15,31 +15,38 @@ public class ClientController {
   @Autowired
   ClientService service;
 
-  @GetMapping( value = "/clients" )
-  @ResponseBody
-  public List<Client> allClients() {
-    return service.todosClientes();
-  }
-
-  @PostMapping( value = "/addclient" )
+  @PostMapping
   @ResponseBody
   public Client addClient( @RequestBody Client client ) {
     return service.salvar( client );
   }
 
-  @PutMapping( value = "/editclient")
+  @PutMapping( value = "/{id}")
   @ResponseBody
   public Client editClient( @PathVariable Integer id, @RequestBody Client client ) {
     return service.editar( client, id );
   }
 
-  @GetMapping( value = "/name/{nome}" )
+  @RequestMapping( value = "/{id}" )
+  @ResponseBody
+  public Boolean delete( @PathVariable Integer id ) {
+    service.delete( id );
+    return true;
+  }
+
+  @GetMapping
+  @ResponseBody
+  public List<Client> allClients() {
+    return service.todosClientes();
+  }
+
+  @GetMapping( value = "/name/{name}" )
   @ResponseBody
   public List<Client> findByName( @PathVariable String name ) {
     return service.findByNome( name );
   }
 
-  @GetMapping( value = "/cpf/{cpf}" )
+  @GetMapping( value = "/email/{email}" )
   @ResponseBody
   public Client findByEmail( @PathVariable String email ) {
     return service.findByEmail( email );
@@ -50,12 +57,4 @@ public class ClientController {
   public Client findById( @PathVariable Integer id ) {
     return service.clientEspecific( id );
   }
-
-  @RequestMapping( value = "/delete/{id}" )
-  @ResponseBody
-  public Boolean delete( @PathVariable Integer id ) {
-    service.delete( id );
-    return true;
-  }
-
 }
