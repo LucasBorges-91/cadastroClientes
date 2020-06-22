@@ -1,6 +1,6 @@
-package br.com.customerrelationship.Servicies;
+package br.com.customerrelationship.services;
 
-import br.com.customerrelationship.Repositories.ClientRepository;
+import br.com.customerrelationship.repositories.ClientRepository;
 import br.com.customerrelationship.entities.Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,27 +16,27 @@ public class ClientService {
   private ClientRepository repository;
 
   @Transactional( rollbackFor = Exception.class )
-  public Client salvar( Client client ) {
+  public Client save( Client client ) {
     return repository.save( client );
   }
 
   @Transactional( rollbackFor = Exception.class )
-  public Client editar( Client client, Integer id ) {
+  public Client edit( Client client, Integer id ) {
     client.setId( id );
     return repository.save( client );
   }
 
-  public List<Client> todosClientes() {
+  public List<Client> allClients() {
     return ( List<Client> ) repository.findAll();
   }
 
-  public Client clientEspecific( Integer id ) {
+  public Client specificCustomer( Integer id ) {
     Optional<Client> client = repository.findById( id );
     return client.get();
   }
 
-  public List<Client> findByNome( String nome ) {
-    return repository.findByNome( nome );
+  public List<Client> findByName( String name ) {
+    return repository.findByName( name );
   }
 
   public Client findByEmail( String email ) {

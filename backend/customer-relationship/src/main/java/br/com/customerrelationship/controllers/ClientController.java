@@ -1,6 +1,6 @@
 package br.com.customerrelationship.controllers;
 
-import br.com.customerrelationship.Servicies.ClientService;
+import br.com.customerrelationship.services.ClientService;
 import br.com.customerrelationship.entities.Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,13 +18,13 @@ public class ClientController {
   @PostMapping
   @ResponseBody
   public Client addClient( @RequestBody Client client ) {
-    return service.salvar( client );
+    return service.save( client );
   }
 
   @PutMapping( value = "/{id}")
   @ResponseBody
   public Client editClient( @PathVariable Integer id, @RequestBody Client client ) {
-    return service.editar( client, id );
+    return service.edit( client, id );
   }
 
   @RequestMapping( value = "/{id}" )
@@ -37,13 +37,13 @@ public class ClientController {
   @GetMapping
   @ResponseBody
   public List<Client> allClients() {
-    return service.todosClientes();
+    return service.allClients();
   }
 
   @GetMapping( value = "/name/{name}" )
   @ResponseBody
   public List<Client> findByName( @PathVariable String name ) {
-    return service.findByNome( name );
+    return service.findByName( name );
   }
 
   @GetMapping( value = "/email/{email}" )
@@ -55,6 +55,6 @@ public class ClientController {
   @GetMapping( value = "/{id}" )
   @ResponseBody
   public Client findById( @PathVariable Integer id ) {
-    return service.clientEspecific( id );
+    return service.specificCustomer( id );
   }
 }
