@@ -19,7 +19,7 @@ public class Client {
   @Column( nullable = false )
   private String name;
 
-  @Column( nullable = false )
+  @Column( nullable = false, name = "birthDate")
   @JsonFormat( shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy" )
   private Date birthDate;
 
@@ -30,7 +30,7 @@ public class Client {
   private String telephone;
 
   @Column
-  private String adress;
+  private String address;
 
   @Column
   private Integer number;
@@ -62,11 +62,11 @@ public class Client {
     this.name = name;
   }
 
-  public Date getBithDate() {
+  public Date getBirthDate() {
     return birthDate;
   }
 
-  public void setBithDate(Date birthDate) {
+  public void setBirthDate(Date birthDate) {
     this.birthDate = birthDate;
   }
 
@@ -86,12 +86,12 @@ public class Client {
     this.telephone = telephone;
   }
 
-  public String getAdress() {
-    return adress;
+  public String getAddress() {
+    return address;
   }
 
-  public void setAdress(String adress) {
-    this.adress = adress;
+  public void setAddress(String adress) {
+    this.address = adress;
   }
 
   public Integer getNumber() {
