@@ -21,7 +21,6 @@ export default class Home extends Component {
         const response = await this.backEndApi.getAllClients('');
 
         this.setState({ clients: response.data })
-        console.log(response.data)
     }
 
     
@@ -38,7 +37,6 @@ export default class Home extends Component {
 
     render() {
         const { clients } = this.state;
-        //console.log(clients);
         return (
             <div className="containerHome">                
                 <Header
@@ -50,7 +48,7 @@ export default class Home extends Component {
                     <Input
                         nameClass="inputHome"
                         placeholder="Search"
-                        tipo="search"
+                        type="search"
                     />
                     <img src={Lupa} className="btn" alt="buscar"/>
                 </div>

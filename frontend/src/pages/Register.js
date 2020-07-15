@@ -27,9 +27,9 @@ export default class Cadastro extends Component {
 
     getValues(event) {
         const value = event.target.value;
-        const name = event.target.name;
+        const nickname = event.target.name;
 
-        this.setState({[name]: value})
+        this.setState({[nickname]: value})
     }
     
    
@@ -76,65 +76,64 @@ export default class Cadastro extends Component {
                         <form>
                             <label>Name </label>
                             <Input
-                                nome="name"
+                                nickname="name"
                                 nameClass="inputRegister"
                                 placeholder="Name"
-                                tipo="text"
+                                type="text"
                                 func={this.getValues.bind(this)}
                             />
                             <label>Birth date </label>
                             <Input
-                                nome="birthDate"
+                                nickname="birthDate"
                                 nameClass="inputRegister"
                                 placeholder="Birth date"
-                                tipo="text"
+                                type="text"
                                 func={this.getValues.bind(this)}
                             />
                             <label>Email </label>
                             <Input
-                                nome="email"
+                                nickname="email"
                                 nameClass="inputRegister"
                                 placeholder="email"
-                                tipo="email"
+                                type="email"
                                 func={this.getValues.bind(this)}
                             />
                             <label>Telephone </label>
                             <Input
-                                nome="telephone"
+                                nickname="telephone"
                                 nameClass="inputRegister"
                                 placeholder="Telephone"
-                                tipo="text"
+                                type="text"
                                 func={this.getValues.bind(this)}
                             />
                             <label>Address </label>
                             <Input
-                                nome="address"
+                                nickname="address"
                                 nameClass="inputRegister"
                                 placeholder="Address"
-                                tipo="text"
+                                type="text"
                                 func={this.getValues.bind(this)}
                             />
                             <label>Number </label>
                             <Input
-                                nome="number"
+                                nickname="number"
                                 nameClass="inputRegister"
                                 placeholder="Number"
-                                tipo="text"
+                                type="text"
                                 func={this.getValues.bind(this)}
                             />
                             <label>Complement </label>
                             <Input
-                                nome="complement"
+                                nickname="complement"
                                 nameClass="inputRegister"
                                 placeholder="Complement"
-                                tipo="text"
+                                type="text"
                                 func={this.getValues.bind(this)}
                             />
                             <Input
                                 nameClass="inSub"
                                 placeholder="Register"
-                                tipo="submit"
-                                value="Register"
+                                type="submit"
                                 funct={this.postUsuario.bind(this)}
                             />
                         </form>
