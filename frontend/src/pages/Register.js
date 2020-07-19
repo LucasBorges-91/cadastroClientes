@@ -181,7 +181,7 @@ export default class Cadastro extends Component {
                             <Input
                                 nameClass="inSub"
                                 placeholder="Register"
-                                tipo="submit"
+                                type="submit"
                                 value="Register"
                                 funct={this.postUsuario.bind(this)}
                             />
