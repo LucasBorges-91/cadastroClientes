@@ -166,7 +166,7 @@ export default class Cadastro extends Component {
                             <Input
                                 nameClass="inputRegister"
                                 placeholder="Number"
-                                tipo="text"
+                                type="text"
                                 id="inNumber"
                                 func={this.getNumber.bind(this)}
                             />
