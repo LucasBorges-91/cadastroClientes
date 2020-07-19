@@ -40,7 +40,7 @@ public class Client {
 
   public Client() {}
 
-  public Client(String name, Date birthDate, String email) {
+  public Client( String name, Date birthDate, String email ) {
     this.name = name;
     this.birthDate = birthDate;
     this.email = email;
