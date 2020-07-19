@@ -21,7 +21,7 @@ public class ClientController {
     return service.save( client );
   }
 
-  @PutMapping( value = "/{id}")
+  @PutMapping( value = "/{id}" )
   @ResponseBody
   public Client editClient( @PathVariable Integer id, @RequestBody Client client ) {
     return service.edit( client, id );
