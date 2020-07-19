@@ -174,7 +174,7 @@ export default class Cadastro extends Component {
                             <Input
                                 nameClass="inputRegister"
                                 placeholder="Complement"
-                                tipo="text"
+                                type="text"
                                 id="inComplement"
                                 func={this.getComplement.bind(this)}
                             />
