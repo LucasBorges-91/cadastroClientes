@@ -82,7 +82,7 @@ public class Client {
     return telephone;
   }
 
-  public void setTelephone(String telephone) {
+  public void setTelephone( String telephone ) {
     this.telephone = telephone;
   }
 
