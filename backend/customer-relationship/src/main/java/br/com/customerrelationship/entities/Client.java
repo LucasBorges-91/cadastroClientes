@@ -19,7 +19,7 @@ public class Client {
   @Column( nullable = false )
   private String name;
 
-  @Column( nullable = false, name = "birthDate")
+  @Column( nullable = false, name = "birthDate" )
   @JsonFormat( shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy" )
   private Date birthDate;
 
