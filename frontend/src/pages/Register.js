@@ -154,7 +154,7 @@ export default class Cadastro extends Component {
                                 id="inTelephone"
                                 func={this.getTelephone.bind(this)}
                             />
-                            <label>Adress </label>
+                            <label>Address </label>
                             <Input
                                 nameClass="inputRegister"
                                 placeholder="Adress"
