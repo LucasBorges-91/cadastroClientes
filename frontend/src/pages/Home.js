@@ -40,7 +40,8 @@ export default class Home extends Component {
         return (
             <div className="containerHome">                
                 <Header
-                    divCabecalho="cabecalho"
+                    divHeader="header"
+
                     divTitulo="tituloCabecalho"
                     divBtn="divButtons"
                 />
