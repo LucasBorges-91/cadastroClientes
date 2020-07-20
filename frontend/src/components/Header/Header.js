@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default class Header extends Component {
 
     render() {
-        const  { divCabecalho, divTitulo, divBtn } = this.props
+        const  { divHeader, divTitle, divBtn } = this.props
         return (
                 <div className={divCabecalho}>
                     <div className={divTitulo}>
