@@ -6,7 +6,7 @@ import '../pages/register.css'
 import BackEndApi from '../api/backEndApi';
 
 
-export default class Cadastro extends Component {
+export default class Register extends Component {
 
     constructor(props) {
         super(props);
@@ -87,6 +87,7 @@ export default class Cadastro extends Component {
                                 nickname="birthDate"
                                 nameClass="inputRegister"
                                 placeholder="Birth date"
+                                type="date"
                                 type="text"
                                 func={this.getValues.bind(this)}
                             />
@@ -134,6 +135,7 @@ export default class Cadastro extends Component {
                                 nameClass="inSub"
                                 placeholder="Register"
                                 type="submit"
+                                value="Register"
                                 funct={this.postUsuario.bind(this)}
                             />
                         </form>

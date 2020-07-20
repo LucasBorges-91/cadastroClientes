@@ -21,7 +21,7 @@ public class ClientController {
     return service.save( client );
   }
 
-  @PutMapping( value = "/{id}")
+  @PutMapping( value = "/{id}" )
   @ResponseBody
   public Client editClient( @PathVariable Integer id, @RequestBody Client client ) {
     return service.edit( client, id );
@@ -52,7 +52,7 @@ public class ClientController {
     return service.findByEmail( email );
   }
 
-  @GetMapping( value = "/{id}" )
+  @GetMapping( value = "/id/{id}" )
   @ResponseBody
   public Client findById( @PathVariable Integer id ) {
     return service.specificCustomer( id );

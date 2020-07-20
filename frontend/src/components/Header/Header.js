@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 export default class Header extends Component {
 
     render() {
-        const  { divCabecalho, divTitulo, divBtn } = this.props
+        const  { divHeader, divTitle, divBtn } = this.props
         return (
-                <div className={divCabecalho}>
-                    <div className={divTitulo}>
+                <div className={divHeader}>
+                    <div className={divTitle}>
                         <h1 className=''>Customers</h1>
                     </div>
                     <div className={divBtn}>

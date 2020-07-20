@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table( name = "CLIENTS")
+@Table( name = "CLIENTS" )
 public class Client {
 
 
@@ -19,7 +19,7 @@ public class Client {
   @Column( nullable = false )
   private String name;
 
-  @Column( nullable = false )
+  @Column( nullable = false, name = "birthDate" )
   @JsonFormat( shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy" )
   private Date birthDate;
 
@@ -30,7 +30,7 @@ public class Client {
   private String telephone;
 
   @Column
-  private String adress;
+  private String address;
 
   @Column
   private Integer number;
@@ -40,7 +40,7 @@ public class Client {
 
   public Client() {}
 
-  public Client(String name, Date birthDate, String email) {
+  public Client( String name, Date birthDate, String email ) {
     this.name = name;
     this.birthDate = birthDate;
     this.email = email;
@@ -50,7 +50,7 @@ public class Client {
     return id;
   }
 
-  public void setId(Integer id) {
+  public void setId( Integer id ) {
     this.id = id;
   }
 
@@ -58,15 +58,15 @@ public class Client {
     return name;
   }
 
-  public void setName(String name) {
+  public void setName( String name ) {
     this.name = name;
   }
 
-  public Date getBithDate() {
+  public Date getBirthDate() {
     return birthDate;
   }
 
-  public void setBithDate(Date birthDate) {
+  public void setBirthDate( Date birthDate ) {
     this.birthDate = birthDate;
   }
 
@@ -74,7 +74,7 @@ public class Client {
     return email;
   }
 
-  public void setEmail(String email) {
+  public void setEmail( String email ) {
     this.email = email;
   }
 
@@ -82,23 +82,23 @@ public class Client {
     return telephone;
   }
 
-  public void setTelephone(String telephone) {
+  public void setTelephone( String telephone ) {
     this.telephone = telephone;
   }
 
-  public String getAdress() {
-    return adress;
+  public String getAddress() {
+    return address;
   }
 
-  public void setAdress(String adress) {
-    this.adress = adress;
+  public void setAddress( String address ) {
+    this.address = address;
   }
 
   public Integer getNumber() {
     return number;
   }
 
-  public void setNumber(Integer number) {
+  public void setNumber( Integer number ) {
     this.number = number;
   }
 
@@ -106,7 +106,7 @@ public class Client {
     return complement;
   }
 
-  public void setComplement(String complement) {
+  public void setComplement( String complement ) {
     this.complement = complement;
   }
 }
