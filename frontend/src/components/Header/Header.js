@@ -9,7 +9,7 @@ export default class Header extends Component {
         const  { divHeader, divTitle, divBtn } = this.props
         return (
                 <div className={divHeader}>
-                    <div className={divTitulo}>
+                    <div className={divTitle}>
                         <h1 className=''>Customers</h1>
                     </div>
                     <div className={divBtn}>
