@@ -42,7 +42,8 @@ export default class Home extends Component {
                 <Header
                     divHeader="header"
 
-                    divTitulo="tituloCabecalho"
+                    divTitle="headerTitle"
+
                     divBtn="divButtons"
                 />
                 <div className="divInputHome">
