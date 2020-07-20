@@ -91,7 +91,7 @@ public class Client {
   }
 
   public void setAddress( String address ) {
-    this.address = adress;
+    this.address = address;
   }
 
   public Integer getNumber() {
