@@ -16,7 +16,7 @@ export default class Register extends Component {
             birthDate: null,
             email: null,
             telephone: null,
-            adress: null,
+            address: null,
             number: null,
             complement: null,
             color: null,
@@ -25,62 +25,14 @@ export default class Register extends Component {
         }
     }
 
-    getName(evt) {
-        const name = evt.target.value;
+    getValues(event) {
+        const value = event.target.value;
+        const nickname = event.target.name;
 
-        this.setState({
-            name: name
-        })
+        this.setState({[nickname]: value})
     }
-
-    getBirthDate(evt) {
-        const birthDate = evt.target.value;
-
-        this.setState({
-            birthDate: birthDate
-        })
-    }
-
-    getEmail(evt) {
-        const email = evt.target.value;
-
-        this.setState({
-            email: email
-        })
-    }
-
-    getTelephone(evt) {
-        const telephone = evt.target.value;
-
-        this.setState({
-            telephone: telephone
-        })
-    }
-
-    getAdress(evt) {
-        const adress = evt.target.value;
-
-        this.setState({
-            adress: adress
-        })
-    }
-
-    getNumber(evt) {
-        const number = evt.target.valeu;
-
-        this.setState({
-            number: number
-        })
-    }
-
-    getComplement(evt) {
-        const complement = evt.target.value;
-
-        this.setState({
-            complement: complement
-        })
-    }
-
+    
+   
     postUsuario() {
         this.backEndApi.postClient(this.state)
         this.setState({
@@ -124,59 +76,60 @@ export default class Register extends Component {
                         <form>
                             <label>Name </label>
                             <Input
+                                nickname="name"
                                 nameClass="inputRegister"
                                 placeholder="Name"
                                 type="text"
-                                id="inName"
-                                func={this.getName.bind(this)}
+                                func={this.getValues.bind(this)}
                             />
                             <label>Birth date </label>
                             <Input
+                                nickname="birthDate"
                                 nameClass="inputRegister"
                                 placeholder="Birth date"
                                 type="date"
-                                id="inBirth"
-                                func={this.getBirthDate.bind(this)}
+                                type="text"
+                                func={this.getValues.bind(this)}
                             />
                             <label>Email </label>
                             <Input
+                                nickname="email"
                                 nameClass="inputRegister"
                                 placeholder="email"
                                 type="email"
-                                id="inEmail"
-                                func={this.getEmail.bind(this)}
+                                func={this.getValues.bind(this)}
                             />
                             <label>Telephone </label>
                             <Input
+                                nickname="telephone"
                                 nameClass="inputRegister"
                                 placeholder="Telephone"
                                 type="text"
-                                id="inTelephone"
-                                func={this.getTelephone.bind(this)}
+                                func={this.getValues.bind(this)}
                             />
                             <label>Address </label>
                             <Input
+                                nickname="address"
                                 nameClass="inputRegister"
                                 placeholder="Address"
                                 type="text"
-                                id="inAddress"
-                                func={this.getAdress.bind(this)}
+                                func={this.getValues.bind(this)}
                             />
                             <label>Number </label>
                             <Input
+                                nickname="number"
                                 nameClass="inputRegister"
                                 placeholder="Number"
                                 type="text"
-                                id="inNumber"
-                                func={this.getNumber.bind(this)}
+                                func={this.getValues.bind(this)}
                             />
                             <label>Complement </label>
                             <Input
+                                nickname="complement"
                                 nameClass="inputRegister"
                                 placeholder="Complement"
                                 type="text"
-                                id="inComplement"
-                                func={this.getComplement.bind(this)}
+                                func={this.getValues.bind(this)}
                             />
                             <Input
                                 nameClass="inSub"
