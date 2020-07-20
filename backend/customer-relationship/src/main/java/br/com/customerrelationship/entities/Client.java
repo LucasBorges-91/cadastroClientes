@@ -66,7 +66,7 @@ public class Client {
     return birthDate;
   }
 
-  public void setBirthDate(Date birthDate) {
+  public void setBirthDate( Date birthDate ) {
     this.birthDate = birthDate;
   }
 
