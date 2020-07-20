@@ -8,7 +8,7 @@ export default class Header extends Component {
     render() {
         const  { divHeader, divTitle, divBtn } = this.props
         return (
-                <div className={divCabecalho}>
+                <div className={divHeader}>
                     <div className={divTitulo}>
                         <h1 className=''>Customers</h1>
                     </div>
