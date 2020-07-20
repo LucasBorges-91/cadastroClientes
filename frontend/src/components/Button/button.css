@@ -1,0 +1,33 @@
+.button {
+    padding: 2px;
+    margin: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 30px;    
+    text-decoration: none;
+    background: #fff;
+    font-size: 16px;
+}
+
+.buttonLink {
+    padding: 3px;
+    margin: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 20px;    
+    text-decoration: none;
+    background: #fff;
+    font-size: 15px;
+    border: 2px outset #ddd;
+}
+
+.buttonLink:active {
+    border: 2px inset #ddd;
+    border-radius: 8px;
+}
+
+
+
+
