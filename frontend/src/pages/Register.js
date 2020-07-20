@@ -142,7 +142,7 @@ export default class Register extends Component {
                             <Input
                                 nameClass="inputRegister"
                                 placeholder="email"
-                                tipo="email"
+                                type="email"
                                 id="inEmail"
                                 func={this.getEmail.bind(this)}
                             />
