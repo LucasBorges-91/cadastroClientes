@@ -50,7 +50,7 @@ export default class Home extends Component {
                     <Input
                         nameClass="inputHome"
                         placeholder="Search"
-                        tipo="search"
+                        type="search"
                     />
                     <img src={Lupa} className="btn" alt="buscar"/>
                 </div>
