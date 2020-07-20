@@ -7,7 +7,7 @@ export default class CustomerDetails extends Component {
         return (
             <div>
                 <Header
-                    divCabecalho="cabecalho"
+                    divHeader="header"
                     divTitulo="tituloCabecalho"
                     divBtn="divButtons"
                 />
