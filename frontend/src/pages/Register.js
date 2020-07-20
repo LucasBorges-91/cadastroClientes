@@ -134,7 +134,7 @@ export default class Register extends Component {
                             <Input
                                 nameClass="inputRegister"
                                 placeholder="Birth date"
-                                tipo="date"
+                                type="date"
                                 id="inBirth"
                                 func={this.getBirthDate.bind(this)}
                             />
