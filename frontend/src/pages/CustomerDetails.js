@@ -8,7 +8,7 @@ export default class CustomerDetails extends Component {
             <div>
                 <Header
                     divHeader="header"
-                    divTitulo="tituloCabecalho"
+                    divTitle="headerTitle"
                     divBtn="divButtons"
                 />
                 <div className="divLeft"></div>
