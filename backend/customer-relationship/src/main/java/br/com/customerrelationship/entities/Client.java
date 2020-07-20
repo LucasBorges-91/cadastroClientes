@@ -98,7 +98,7 @@ public class Client {
     return number;
   }
 
-  public void setNumber(Integer number) {
+  public void setNumber( Integer number ) {
     this.number = number;
   }
 
