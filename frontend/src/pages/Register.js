@@ -158,7 +158,7 @@ export default class Register extends Component {
                             <Input
                                 nameClass="inputRegister"
                                 placeholder="Address"
-                                tipo="text"
+                                type="text"
                                 id="inAddress"
                                 func={this.getAdress.bind(this)}
                             />
