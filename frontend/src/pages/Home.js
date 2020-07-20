@@ -52,7 +52,8 @@ export default class Home extends Component {
                         placeholder="Search"
                         type="search"
                     />
-                    <img src={Lupa} className="btn" alt="buscar"/>
+                    <img src={Lupa} className="btn" alt="search"/>
+
                 </div>
                 <div className='divCard'>
                      {clients.map( client => <Card key={client.id} name={client.name} email={client.email} telephone={client.telephone} 
