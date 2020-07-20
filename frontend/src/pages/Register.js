@@ -6,7 +6,7 @@ import '../pages/register.css'
 import BackEndApi from '../api/backEndApi';
 
 
-export default class Cadastro extends Component {
+export default class Register extends Component {
 
     constructor(props) {
         super(props);
