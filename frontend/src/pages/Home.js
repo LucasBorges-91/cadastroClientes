@@ -37,7 +37,6 @@ export default class Home extends Component {
 
     render() {
         const { clients } = this.state;
-        console.log(clients);
         return (
             <div className="containerHome">                
                 <Header
