@@ -106,7 +106,7 @@ public class Client {
     return complement;
   }
 
-  public void setComplement(String complement) {
+  public void setComplement( String complement ) {
     this.complement = complement;
   }
 }
