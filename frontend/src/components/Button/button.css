@@ -24,8 +24,7 @@
 }
 
 .buttonLink:active {
-    border: 2px inset #ddd;
-    border-radius: 8px;
+    border: 1px inset #ddd;
 }
 
 
