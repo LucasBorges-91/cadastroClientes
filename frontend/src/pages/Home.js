@@ -42,7 +42,7 @@ export default class Home extends Component {
                 <Header
                     divHeader="header"
 
-                    divTitle="headerTitle"
+                    divTitle="titleHeader"
 
                     divBtn="divButtons"
                 />

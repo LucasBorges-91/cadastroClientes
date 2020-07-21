@@ -64,8 +64,8 @@ export default class Register extends Component {
             <div className="containerRegister">
                 <div>
                     <Header
-                        divCabecalho="cabecalho"
-                        divTitulo="tituloCabecalho"
+                        divHeader="header"
+                        divTitle="titleHeader"
                         divBtn="divButtons"
                     />
                     <div className="divCont">
@@ -74,7 +74,7 @@ export default class Register extends Component {
                             <span>Register Customer</span>
                         </div>
                         <form>
-                            <label>Name </label>
+                            <label>Name</label>
                             <Input
                                 nickname="name"
                                 nameClass="inputRegister"
@@ -88,7 +88,6 @@ export default class Register extends Component {
                                 nameClass="inputRegister"
                                 placeholder="Birth date"
                                 type="date"
-                                type="text"
                                 func={this.getValues.bind(this)}
                             />
                             <label>Email </label>

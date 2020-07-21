@@ -1,4 +1,4 @@
-.cabecalho{
+.header{
     width: 100vw - 4px;
     background: rgba(228, 226, 226, 0.911);
     border-bottom: 2px solid #ccc;
@@ -12,14 +12,14 @@
     position: relative;
 }
 
-.tituloCabecalho {
+.titleHeader {
     display: flex;
     float: left;
     margin: 0;
     width: 50%;
 }
 
-.tituloCabecalho h1 {
+.titleHeader h1 {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20pt;
